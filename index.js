@@ -17,7 +17,7 @@ function addToCart(item) {
 
 function viewCart() {
   var numberItems = cart.length
-  var list = []
+  var cartList = []
   if(numberItems === 0) {
     return "Your shopping cart is empty."
   }
@@ -27,13 +27,14 @@ function viewCart() {
   else {
     for(let i = 0; i < cart.length; i += 1) {
       if(i < (cart.length - 1)) {
-
+        cartList.push(` ${cart[i].itemName} at $${cart[i].itemPrice},`)
       }
       else {
-
+        cartList.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}.`)
       }
     }
   }
+  return cartList
 }
 
 function total() {
