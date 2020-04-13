@@ -34,7 +34,7 @@ function viewCart() {
       }
     }
   }
-  return `In your cart, you have${cartList}.`
+  console.log( `In your cart, you have${cartList}.`)
   debugger
 }
 
