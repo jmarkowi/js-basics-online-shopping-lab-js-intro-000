@@ -30,11 +30,11 @@ function viewCart() {
         cartList.push(` ${cart[i].itemName} at $${cart[i].itemPrice},`)
       }
       else {
-        cartList.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+        cartList.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}`)
       }
     }
   }
-  return cartList
+  return `In your cart, you have ${cartList}.`
 }
 
 function total() {
