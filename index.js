@@ -35,6 +35,7 @@ function viewCart() {
     }
   }
   return `In your cart, you have${cartList}.`
+  debugger
 }
 
 function total() {
