@@ -27,14 +27,14 @@ function viewCart() {
   else {
     for(let i = 0; i < cart.length; i += 1) {
       if(i < (cart.length - 1)) {
-        cartList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+        cartList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
       }
       else {
         cartList.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}`)
       }
     }
   }
-  return `In your cart, you have ${cartList}.`
+  return `In your cart, you have${cartList}.`
 }
 
 function total() {
