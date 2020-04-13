@@ -23,7 +23,6 @@ function viewCart() {
   else if(numberItems === 1) {
     return `In your cart you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }
-  }
 }
 
 function total() {
