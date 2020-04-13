@@ -34,8 +34,7 @@ function viewCart() {
       }
     }
   }
-  console.log( `In your cart, you have${cartList}.`)
-  debugger
+  return `In your cart, you have${cartList}.`
 }
 
 function total() {
