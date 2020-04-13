@@ -27,10 +27,10 @@ function viewCart() {
   else {
     for(let i = 0; i < cart.length; i += 1) {
       if(i < (cart.length - 1)) {
-        
+
       }
       else {
-        
+
       }
     }
   }
